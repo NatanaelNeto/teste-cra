@@ -26,9 +26,9 @@ describe('teste da aplicação toda', () => {
     
     expect(aboutLink).toBeInTheDocument();
 
-    // const aboutTitle = screen.getByRole('heading',
-    //   { name: 'Você está na página Sobre' });
-    // expect(aboutTitle).toBeInTheDocument();
+    const aboutTitle = screen.getByRole('heading',
+      { name: 'Você está na página Sobre' });
+    expect(aboutTitle).toBeInTheDocument();
   });
 
   it('deve testar um caminho não existente e a renderização do Not Found', () => {
